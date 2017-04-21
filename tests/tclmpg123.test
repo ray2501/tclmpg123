@@ -1,0 +1,54 @@
+# tclmpg123.test --
+#
+#	Tests for tclmpg123
+#------------------------------------------------------------------------------
+
+lappend auto_path .
+if {[lsearch [namespace children] ::tcltest] == -1} {
+    package require tcltest 2
+    namespace import -force ::tcltest::*
+}
+loadTestedCommands
+package require mpg123
+
+
+#-------------------------------------------------------------------------------
+
+
+test mpg123-1.1 {initialize wrong args} {*}{
+    -body {
+        mpg123 mpg0
+    }
+    -returnCodes error
+    -match glob
+    -result {wrong # args*}
+}
+
+test mpg123-1.2 {initialize wrong args 2} {*}{
+    -body {
+        mpg123 mpg0 path -buffersize
+    }
+    -returnCodes error
+    -match glob
+    -result {wrong # args*}
+}
+
+test mpg123-1.3 {initialize wrong args 3} {*}{
+    -body {
+        mpg123 mpg0 path -buffersize aaa
+    }
+    -returnCodes error
+    -match glob
+    -result {expected integer*}
+}
+
+test mpg123-1.4 {initialize wrong path} {*}{
+    -body {
+        catch {mpg123 mpg0 path}
+    }
+    -result {1}
+}
+
+
+cleanupTests
+return

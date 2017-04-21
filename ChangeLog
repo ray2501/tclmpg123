@@ -1,0 +1,38 @@
+2017-01-07  Danilo Chang
+
+    * Bump version to 0.8
+    * Add new command get_ID3v1
+
+2016-12-29  Danilo Chang
+
+    * Bump version to 0.7
+    * mpg123 command: Free memory before return error
+    * Fix wrong test, update tclmpg123.test
+    * Bump version to 0.6
+    * Fix buffer size when read, use the specify buffersize
+
+2016-12-27  Danilo Chang
+
+    * Bump version to 0.5
+    * Add buffersize method
+
+2016-12-26  Danilo Chang
+
+    * Bump version to 0.4
+    * mpg123 command: Get the full length of current track in samples
+
+2016-12-18  Danilo Chang
+
+    * Bump version to 0.3
+    * Add option -buffersize to mpg123 command
+
+2016-12-14  Danilo Chang
+
+    * Bump version to 0.2
+    * Add basic tests
+
+2016-12-12  Danilo Chang
+
+    * Implement basic command
+    * Dump sample extension
+
