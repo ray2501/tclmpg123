@@ -37,6 +37,10 @@ Below is an example for openSUSE
 
 	sudo zypper in libmpg123-devel
 
+If you use openSUSE LEAP 42.3, you can try below command to install development files:
+
+	sudo zypper in mpg123-devel
+
 Below is an example for Ubuntu:
 
 	sudo apt-get install libmpg123-dev
