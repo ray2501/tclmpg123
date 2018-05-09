@@ -339,6 +339,10 @@ static int MpgMain(void *cd, Tcl_Interp *interp, int objc,Tcl_Obj *const*objv){
       p->buffersize = buffersize;
       p->buff_init = 1;
       Tcl_MutexUnlock(&myMutex);
+    } else {
+      Tcl_Free((char *)p);
+      Tcl_AppendResult(interp, "unknown option: ", zArg, (char*)0);
+      return TCL_ERROR;
     }
   }
 

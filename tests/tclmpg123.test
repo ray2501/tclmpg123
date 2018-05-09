@@ -49,6 +49,15 @@ test mpg123-1.4 {initialize wrong path} {*}{
     -result {1}
 }
 
+test mpg123-1.5 {unknown option} {*}{
+    -body {
+        mpg123 mpg0 path -aaa 123
+    }
+    -returnCodes error
+    -match glob
+    -result {unknown option*}
+}
+
 
 cleanupTests
 return
