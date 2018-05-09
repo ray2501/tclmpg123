@@ -4,7 +4,7 @@
 
 Name:          tclmpg123
 Summary:       Tcl bindings for libmpg123
-Version:       0.8
+Version:       0.9
 Release:       2
 License:       LGPL v2.1
 Group:         Development/Libraries/Tcl
