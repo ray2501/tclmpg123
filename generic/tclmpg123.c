@@ -1,7 +1,7 @@
 /*
  * tclmpg123.c
  *
- *      Copyright (C) Danilo Chang 2016-2017
+ *      Copyright (C) Danilo Chang 2016-2018
  *
  ********************************************************************/
 
@@ -136,7 +136,7 @@ static int MpgObjCmd(void *cd, Tcl_Interp *interp, int objc,Tcl_Obj *const*objv)
       if(result != MPG123_OK) {
          return TCL_ERROR;
       } else {
-         return_obj = Tcl_NewStringObj((char *) pMpg->buffer, read_count);
+         return_obj = Tcl_NewByteArrayObj(pMpg->buffer, read_count);
          Tcl_SetObjResult(interp, return_obj);
       }
 
