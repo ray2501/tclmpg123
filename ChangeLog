@@ -1,5 +1,6 @@
 2018-06-11  Danilo Chang
 
+    * Bump version to 1.0
     * Use Tcl Byte Array API to handle data (INCOMPATIBLE CHANGE)
 
 2018-05-09  Danilo Chang
