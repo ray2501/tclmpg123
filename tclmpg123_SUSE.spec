@@ -6,7 +6,7 @@ Name:          tclmpg123
 Summary:       Tcl bindings for libmpg123
 Version:       1.0
 Release:       0
-License:       LGPL v2.1
+License:       LGPL-2.1-or-later
 Group:         Development/Libraries/Tcl
 Source:        %{name}-%{version}.tar.gz
 URL:           https://github.com/ray2501/tclmpg123
