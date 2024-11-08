@@ -148,7 +148,7 @@ static int MpgObjCmd(void *cd, Tcl_Interp *interp, int objc,Tcl_Obj *const*objv)
       int location = 0;
       const char *pWhence = NULL;
       int whence = SEEK_CUR;
-      int len;
+      Tcl_Size len;
       off_t count;
 
       if( objc != 4 ){
@@ -294,7 +294,7 @@ static int MpgMain(void *cd, Tcl_Interp *interp, int objc,Tcl_Obj *const*objv){
   off_t length;
   Tcl_DString translatedFilename;
   Tcl_Obj *pResultStr = NULL;
-  int len;
+  Tcl_Size len;
   int i = 0;
   int result = 0;
 
